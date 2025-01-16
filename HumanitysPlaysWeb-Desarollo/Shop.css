@@ -34,4 +34,5 @@ body {
     max-width: 600px;        /* Ancho máximo del párrafo */
     margin: 20px auto;       /* Centrado horizontal */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    text-align: center;
   }
