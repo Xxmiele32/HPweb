@@ -20,7 +20,7 @@
 
 
 /*Zona de Mateusz*/
-.p7_fondog {   /* Es el fondo gris medio transparente */
+.P7_fondog {   /* Es el fondo gris medio transparente */
     position: absolute; /* Permite usar left y transform */
     left: 50%; /* Mueve el rectángulo al 50% del ancho del contenedor */
     transform: translateX(-50%); /* Ajusta el centro exacto */
@@ -36,24 +36,28 @@
     padding: 20px;
 
 }
-.p7_fondog h1 {
+.P7_fondog h1 {
   color: black;
   margin-bottom: 20px;
 
 }
 
-.p7_fondog p {
+.P7_fondog p {
   margin: 50px; /* Espacio alrededor del párrafo */
   text-align: justify;
   background-color: blueviolet;
 }
 
-.p7_fondog img{
+.P7_fondog img{
   margin: 0 auto; /* Centra la imagen sin márgenes extra */
   position: relative; 
   top: -130px; /* Usa un valor negativo para subir la imagen */
+}
 
-
-
-
+.P9_Preguntas {
+  background-color: #D5B6FC;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Fuente base */
+  color: black; /* Color del texto */
+  text-shadow: 4px 4px 6px #ff66ff; /* Sombra de texto en color rosa */
 }
