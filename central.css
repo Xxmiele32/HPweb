@@ -106,7 +106,7 @@ body {
 
 
 /*Zona de Alan*/
-.p4_shop body{
+.p4_shop {
   background-image: url("img/fondo_todos.jpg");
   background-size: cover;
   background-position: center;
