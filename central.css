@@ -1,4 +1,4 @@
-/*GENEAL*/
+/*GENERAL*/
 body {
   margin: 0;
   padding: 0;
@@ -61,18 +61,6 @@ body {
 
 
 /*Zona de Marc*/
-
-.P10_paginaDiseño {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-image: url("img/fondo_todos.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- }
  
  
  .P10_image-container {
