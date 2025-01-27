@@ -8,14 +8,7 @@
 
 
 /*Zona de Alan*/
-.p4_shop body{
-  background-image: url("img/fondo_todos.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-}
+
 
 .p4_contenedor {
   display: flex;
@@ -47,6 +40,9 @@
   text-align: center;
 }
 
+.p4_points {
+  
+}
 
 
 /*Zona de Marc*/
