@@ -1,5 +1,16 @@
 /*GENEAL*/
-
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/fondo_todos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
 /*Zona de Jose Miguel*/
 .P1_Titulo{
     color: blue;
@@ -164,38 +175,58 @@
 
 
 /*Zona de Mateusz*/
+.p7_paginaDiseño {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/fondo_todos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+
 .p7_fondog {   /* Es el fondo gris medio transparente */
     position: absolute; /* Permite usar left y transform */
     left: 50%; /* Mueve el rectángulo al 50% del ancho del contenedor */
     transform: translateX(-50%); /* Ajusta el centro exacto */
     width: 70%; /* Ancho del rectángulo en porcentaje */
-    height: 70%; /* Alto del rectángulo en porcentaje */
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    height: 75%; /* Alto del rectángulo en porcentaje */
+    background-color: rgba(128, 128, 128, 0.7); /* Fondo semitransparente */
     color: white; /* Color del texto */
     display: flex; /* Opcional: para centrar el contenido interno */
     align-items: center; /* Centra verticalmente el contenido interno */
-    border: 3px solid black;
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
+    border: 3px solid black; /* Tamaño del borde del fondo gris */
+    text-align: center; /* Alinea el texto del fondo */
+    flex-direction: column; /* Es para que en vez de ir de izquierda a derecha va de arriba hacia abajo, eso pasa solo dentro del fondo gris */
+    padding: 20px; /* Da un margen dentro del fondo gris en general */
+    padding-top: 0px; /* Da un margen solo en la parte de arriba del fondo gris */
 
 }
-.p7_fondog h1 {
-  color: black;
-  margin-bottom: 20px;
+.p7_fondog h1 { /* Son las propiedades del los encabezados dentro del fondo */
+  color: black; /* Es el color del encabezado */
+  margin-bottom: 0px; /* Es el margen de abajo */
+  font-family:verdana, sans-serif; /* Es el estilo del encabezado */
+  font-size: 50px; /* el tamaño del encabezado */
 
 }
 
-.p7_fondog p {
+.p7_fondog p { /* Son las propiedades de los textos dentro de fondo */
   margin: 50px; /* Espacio alrededor del párrafo */
-  text-align: justify;
-  background-color: blueviolet;
+  margin-top: 10px; /* es el margen de la parte superior de texto */
+  margin-bottom: 3px; /* es el margen inferior del texto */
+  text-align: justify; /* es par que el texto este justificado */
+  background-color: blueviolet; /* es el color fondo del propio texto */
+  color: black; /* Es el color del texto */
 }
 
-.p7_fondog img{
+.p7_fondog img{ /* Son las propiedades de la imagen */
   margin: 0 auto; /* Centra la imagen sin márgenes extra */
-  position: relative; 
+  position: relative; /* Es para que la imagen no sea afectada por lo demas */
   top: -130px; /* Usa un valor negativo para subir la imagen */
+  width: 60%; /* Es el tamaño de la imagen */
 
 
 
