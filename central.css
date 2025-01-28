@@ -16,10 +16,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 50px;
-  height: 100%;
+  padding: 1px 50px;
+  height: 83%;
  }
  
+.P1_content a{
+  color: #5ea4b9;
+  text-decoration: none;
+}
+
+.P1_content a:hover{
+  color: purple;
+}
+
  /* Left Menu */
  .P1_left-menu {
   display: flex;
@@ -65,6 +74,9 @@ body {
   background-color: rgba(255, 105, 180, 0.9); /* Lighter pink */
  } 
 
+ .P1_footer{
+  background-color: purple;
+ }
 
 /*Zona de Alan*/
 .p4_shop body{
