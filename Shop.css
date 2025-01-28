@@ -1,4 +1,4 @@
-.p4_shop body{
+.p4_shop {
   background-image: url("img/fondo_todos.jpg");
   background-size: cover;
   background-position: center;
@@ -35,4 +35,8 @@
   margin: 20px auto;       /* Centrado horizontal */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
   text-align: center;
+}
+
+.p4_shop {
+  
 }
