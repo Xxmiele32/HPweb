@@ -60,62 +60,60 @@ body {
 
 
 
-/*Zona de Marc*/
- 
- 
- .P10_image-container {
+/* Zona de Marc */
+
+.P10_image-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around; /* Reducido el espacio entre elementos */
   align-items: flex-start;
-  width: 85%;
- }
- 
- 
- .P10_flip-card {
+  width: 90%; /* Reducido de 85% para juntar más las imágenes */
+  margin-top: 10%;
+  size: 200%;
+}
+
+.P10_flip-card {
   background-color: transparent;
   width: 300px;
-  height: 400px;
+  height: 300px;
   perspective: 1000px;
   text-align: center;
-  margin: 10px;
- }
- 
- 
- .P10_flip-card-inner {
+  margin: 5px; /* Reducido de 10px para juntar más las imágenes */
+}
+
+.P10_flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.6s;
- }
- 
- 
- .P10_flip-card-front, .P10_flip-card-back {
+}
+
+.P10_flip-card-front, .P10_flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
- }
- 
- 
- .P10_flip-card-front {
+}
+
+.P10_flip-card-front {
   display: flex;
   justify-content: center;
   align-items: center;
- }
- 
- 
- .P10_flip-card-front img {
+}
+
+.P10_flip-card-front img {
+  width: 100%; /* Asegura que la imagen ocupe todo el espacio */
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que cubra el área sin deformarse */
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 10px;
- }
- 
- 
- .P10_flip-card-back {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000;
+}
+
+.P10_flip-card-back {
+  background-color: rgb(33, 117, 150) ; /* Fondo negro */
+  color: white ; /* Texto blanco */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,42 +122,34 @@ body {
   text-align: center;
   border-radius: 10px;
   transform: rotateY(180deg);
- }
- 
- 
- .P10_flip-card:hover .flip-card-inner {
+}
+
+.P10_flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
- }
- 
- 
- /* Flechas para cambiar de página */
- .P10_arrow {
+}
+
+/* Flechas para cambiar de página */
+.P10_arrow {
   position: fixed;
   bottom: 20px; /* Mantiene las flechas cerca de la parte inferior */
   width: 50px;
   height: 50px;
   cursor: pointer;
   z-index: 10;
- }
- 
- 
- .P10_arrow img {
+}
+
+.P10_arrow img {
   width: 100%;
   height: auto;
- }
- 
- 
- .P10_arrow-left {
-  left: 20px; /* Flecha para volver está en la esquina inferior izquierda */
- }
- 
- 
- .P10_arrow-right {
-  right: 20px; /* Flecha para avanzar está en la esquina inferior derecha */
- }
- 
- 
+}
 
+.P10_arrow-left {
+  left: 20px; /* Flecha para volver está en la esquina inferior izquierda */
+}
+
+.P10_arrow-right {
+  right: 20px; /* Flecha para avanzar está en la esquina inferior derecha */
+}
 
 /*Zona de Mateusz*/
 .p7_paginaDiseño {
