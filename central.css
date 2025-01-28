@@ -239,16 +239,59 @@ body {
 
 }
 .p9_Diseño{
-  text-align: center;
+  flex-direction: column;
+  
 
 }
 
 .p9_Diseño h1{
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+  color: black; /* Color del texto principal */
+  text-shadow: 
+    -1px -1px 0 purple,  
+    1px -1px 0 purple,  
+    -1px  1px 0 purple,  
+    1px  1px 0 purple, /* Borde púrpura */
+    4px  4px 6px rgba(0, 0, 0, 0.6); /* Sombra negra debajo */
+  
+}
 
+.p9_Diseño div{
+  background: #7a3ba3;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 15px;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative; /* Necesario para usar position: absolute en el texto */
+  transition: height 0.3s ease-in-out, margin 0.3s ease; /* Animación suave para el cambio de tamaño */
+  
+
+}
+.p9_Diseño div p {
+  opacity: 0; /* El texto comienza oculto */
+  transition: opacity 0.3s ease; /* La animación de opacidad será suave */
+  margin: 0; /* Sin márgenes para que el texto no se desplace */
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.p9_Diseño div p:nth-child(1) {
+  transition-delay: 0s; /* Primer párrafo aparece inmediatamente */
+}
+.p9_Diseño div:hover {
+  height: 200px; /* Aumenta la altura cuando el ratón está encima */
 
 }
 
-.p9_Diseño p{
-
-
+.p9_Diseño div:hover p {
+  opacity: 1; /* El texto se hace visible cuando el ratón está encima */
 }
