@@ -1,20 +1,16 @@
-// Seleccionamos todas las tarjetas con la clase 'tarjeta-volteable'
-const tarjetasVolteables = document.querySelectorAll('.P10_flip-card');
+// Seleccionamos todas las tarjetas que sean de cualquiera de las dos clases
+const tarjetasVolteables = document.querySelectorAll('.P10_flip-card, .P10_2_flip-card');
 
-// Iteramos sobre cada tarjeta para agregar los event listeners
+// Iteramos sobre cada tarjeta para agregar eventos
 tarjetasVolteables.forEach(tarjeta => {
-    // Seleccionamos el contenedor interior de la tarjeta
-    const tarjetaInterior = tarjeta.querySelector('.P10_flip-card-inner');
-    
-    // Evento cuando el ratón pasa sobre la tarjeta
+    // Seleccionamos el contenedor interno de la tarjeta
+    const tarjetaInterior = tarjeta.querySelector('.P10_flip-card-inner, .P10_2_flip-card-inner');
+
     tarjeta.addEventListener('mouseenter', () => {
-        // Se activa la rotación de la tarjeta al pasar el ratón
         tarjetaInterior.style.transform = 'rotateY(180deg)';
     });
 
-    // Evento cuando el ratón sale de la tarjeta
     tarjeta.addEventListener('mouseleave', () => {
-        // Se desactiva la rotación de la tarjeta al quitar el ratón
         tarjetaInterior.style.transform = 'rotateY(0deg)';
     });
 });
