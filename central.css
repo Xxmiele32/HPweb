@@ -1,4 +1,4 @@
-/*GENEAL*/
+/*GENERAL*/
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +12,71 @@ body {
  }
  
 /*Zona de Jose Miguel*/
-.P1_Titulo{
-    color: blue;
+.P1_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px;
+  height: 83%;
+ }
+ 
+.P1_content a{
+  color: #5ea4b9;
+  text-decoration: none;
 }
 
+.P1_content a:hover{
+  color: purple;
+}
 
+ /* Left Menu */
+ .P1_left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .P1_ellipse {
+  background-color: rgba(75, 0, 130, 0.8); /* Purple background */
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+ }
+ .P1_ellipse:hover {
+  transform: scale(1.1);
+  background-color: rgba(138, 43, 226, 0.9); /* Lighter purple */
+ }
+ /* Main Action (Play Now Button) */
+ .P1_main-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+ }
+ .P1_play-now {
+  background-color: rgba(255, 20, 147, 0.8); /* Pink background */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 100px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+ }
+ .P1_play-now:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 105, 180, 0.9); /* Lighter pink */
+ } 
+
+ .P1_footer{
+  background-color: purple;
+ }
 
 /*Zona de Alan*/
 .p4_shop body{
@@ -61,19 +121,6 @@ body {
 
 
 /*Zona de Marc*/
-
-.P10_paginaDiseño {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("img/fondo_todos.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- }
  
  
  .P10_image-container {
