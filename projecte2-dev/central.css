@@ -1,0 +1,553 @@
+@font-face {
+  font-family: 'Carbon Droid'; /* El nombre que usarás en tu CSS */
+  src: url('fonts/CARBON-DROID.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+  /* Si tienes un archivo .otf, puedes usar 'opentype' en lugar de 'truetype' */
+
+}
+@font-face {
+  font-family: 'Entierely'; /* El nombre que usarás en tu CSS */
+  src: url('fonts/Entirely.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+  /* Si tienes un archivo .otf, puedes usar 'opentype' en lugar de 'truetype' */
+
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/fondo_todos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ h1{
+  font-family: 'Entierely', sans-serif;
+ }
+ p{
+  font-family: 'Carbon Droid', sans-serif;
+ }
+ a{
+  color: blue;
+  text-decoration: none;
+ }
+
+ a:hover{
+  color: purple;
+ }
+
+/*Zona de Jose Miguel*/
+.P1_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px;
+  height: 83%;
+ }
+
+.P1_content a:hover{
+  color: purple;
+}
+
+ /* Left Menu */
+ .P1_left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .P1_ellipse {
+  background-color: rgba(75, 0, 130, 0.8); /* Purple background */
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+ }
+ .P1_ellipse:hover {
+  transform: scale(1.1);
+  background-color: rgba(138, 43, 226, 0.9); /* Lighter purple */
+ }
+ /* Main Action (Play Now Button) */
+ .P1_main-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+ }
+ .P1_play-now {
+  background-color: rgba(255, 20, 147, 0.8); /* Pink background */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 100px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+ }
+ .P1_play-now:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 105, 180, 0.9); /* Lighter pink */
+ } 
+
+ .P1_footer{
+  background-color: purple;
+ }
+
+ .P1_menu-section {
+  display: contents; /* Hace que el section sea invisible para el flex layout */
+}
+
+.P1_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px;
+  height: 83%;
+  width: 100%; /* Asegura que tome todo el ancho */
+}
+
+.P1_left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50px; /* Compensa el padding del contenedor */
+}
+
+ .P2_form-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.P2_Titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input{
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  resize: none;
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: purple;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkviolet;
+}
+
+.P3_board-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.P3_board {
+  margin-bottom: 20px;
+}
+
+.P3_post {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#P3_form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#P3_form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#P3_form input, #P3_form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#P3_form button {
+  padding: 10px 20px;
+  background-color: #5ea4b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#P3_form button:hover {
+  background-color: #4a8a9b;
+}
+/*Zona de Alan*/
+
+
+.p4_contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+.p4_contenedor img {
+  width: 125px;
+  height: 100px;
+}
+
+.p4_izquierda {
+  display: flex;
+  align-items: center;
+}
+
+
+.p4_texto {
+  background-color: #5ea4b9; /* Fondo azul claro */
+  padding: 15px;           /* Espacio interno alrededor del texto */
+  border-radius: 10px;     /* Bordes redondeados */
+  border: 1px solid #f3f2f2;  /* Línea de borde gris */
+  max-width: 600px;        /* Ancho máximo del párrafo */
+  margin: 20px auto;       /* Centrado horizontal */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  text-align: center;
+}
+
+.p4_merch {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+}
+
+.p4_points {
+  position: absolute;
+  top: 300px;
+  left: 1200px;
+}
+
+.p5_contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+.p5_contenedor img {
+  width: 125px;
+  height: 100px;
+}
+
+.p5_izquierda {
+  display: flex;
+  align-items: center;
+}
+
+
+.p5_texto {
+  background-color: #5ea4b9; /* Fondo azul claro */
+  padding: 15px;           /* Espacio interno alrededor del texto */
+  border-radius: 10px;     /* Bordes redondeados */
+  border: 1px solid #f3f2f2;  /* Línea de borde gris */
+  max-width: 600px;        /* Ancho máximo del párrafo */
+  margin: 20px auto;       /* Centrado horizontal */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  text-align: center;
+}
+
+.p6_contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+.p6_contenedor img {
+  width: 125px;
+  height: 100px;
+}
+
+.p6_izquierda {
+  display: flex;
+  align-items: center;
+}
+
+
+.p6_texto {
+  background-color: #5ea4b9; /* Fondo azul claro */
+  padding: 15px;           /* Espacio interno alrededor del texto */
+  border-radius: 10px;     /* Bordes redondeados */
+  border: 1px solid #f3f2f2;  /* Línea de borde gris */
+  max-width: 600px;        /* Ancho máximo del párrafo */
+  margin: 20px auto;       /* Centrado horizontal */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  text-align: center;
+}
+/*Zona de Marc*/
+ 
+ 
+ .P10_image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+ }
+ 
+ 
+ .P10_flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  text-align: center;
+  margin: 10px;
+ }
+ 
+ 
+ .P10_flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+ }
+ 
+ 
+ .P10_flip-card-front, .P10_flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+ }
+ 
+ 
+ .P10_flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ 
+ .P10_flip-card-front img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+ }
+ 
+ 
+ .P10_flip-card-back {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+ }
+ 
+ 
+ .P10_flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+ }
+ 
+ 
+ /* Flechas para cambiar de página */
+ .P10_arrow {
+  position: fixed;
+  bottom: 20px; /* Mantiene las flechas cerca de la parte inferior */
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+ }
+ 
+ 
+ .P10_arrow img {
+  width: 100%;
+  height: auto;
+ }
+ 
+ 
+ .P10_arrow-left {
+  left: 20px; /* Flecha para volver está en la esquina inferior izquierda */
+ }
+ 
+ 
+ .P10_arrow-right {
+  right: 20px; /* Flecha para avanzar está en la esquina inferior derecha */
+ }
+ 
+ 
+
+
+/*Zona de Mateusz*/
+.p7_paginaDiseño {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/fondo_todos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+
+.p7_fondog {   /* Es el fondo gris medio transparente */
+    position: absolute; /* Permite usar left y transform */
+    left: 50%; /* Mueve el rectángulo al 50% del ancho del contenedor */
+    transform: translateX(-50%); /* Ajusta el centro exacto */
+    width: 70%; /* Ancho del rectángulo en porcentaje */
+    height: 75%; /* Alto del rectángulo en porcentaje */
+    background-color: rgba(128, 128, 128, 0.7); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    display: flex; /* Opcional: para centrar el contenido interno */
+    align-items: center; /* Centra verticalmente el contenido interno */
+    border: 3px solid black; /* Tamaño del borde del fondo gris */
+    text-align: center; /* Alinea el texto del fondo */
+    flex-direction: column; /* Es para que en vez de ir de izquierda a derecha va de arriba hacia abajo, eso pasa solo dentro del fondo gris */
+    padding: 20px; /* Da un margen dentro del fondo gris en general */
+    padding-top: 0px; /* Da un margen solo en la parte de arriba del fondo gris */
+
+}
+.p7_fondog h1 { /* Son las propiedades del los encabezados dentro del fondo */
+  color: #F507F0; /* Es el color del encabezado */
+  margin-bottom: 0px; /* Es el margen de abajo */
+  font-size: 50px; /* el tamaño del encabezado */
+
+
+}
+
+.p7_fondog p { /* Son las propiedades de los textos dentro de fondo */
+  margin: 50px; /* Espacio alrededor del párrafo */
+  margin-top: 10px; /* es el margen de la parte superior de texto */
+  margin-bottom: 3px; /* es el margen inferior del texto */
+  text-align: justify; /* es par que el texto este justificado */
+  background-color: #AB2FE0; /* es el color fondo del propio texto */
+  color: #37DE91; /* Es el color del texto #37DE91; */
+}
+
+.p7_fondog img{ /* Son las propiedades de la imagen */
+  margin: 0 auto; /* Centra la imagen sin márgenes extra */
+  position: relative; /* Es para que la imagen no sea afectada por lo demas */
+  top: -130px; /* Usa un valor negativo para subir la imagen */
+  width: 60%; /* Es el tamaño de la imagen */
+}
+
+.p9_body{
+  background-image: none;
+  background-color: #D5B6FC;
+
+}
+.p9_Diseño{
+  flex-direction: column;
+  
+
+}
+
+.p9_Diseño h1{
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+  color: black; /* Color del texto principal */
+  text-shadow: 
+    -1px -1px 0 purple,  
+    1px -1px 0 purple,  
+    -1px  1px 0 purple,  
+    1px  1px 0 purple, /* Borde púrpura */
+    4px  4px 6px rgba(0, 0, 0, 0.6); /* Sombra negra debajo */
+  
+}
+
+.p9_Diseño div{
+  background: #7a3ba3;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 15px;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative; /* Necesario para usar position: absolute en el texto */
+  transition: height 0.3s ease-in-out, margin 0.3s ease; /* Animación suave para el cambio de tamaño */
+  color: white;
+  
+
+}
+.p9_Diseño div p {
+  opacity: 0; /* El texto comienza oculto */
+  transition: opacity 0.3s ease; /* La animación de opacidad será suave */
+  margin: 0; /* Sin márgenes para que el texto no se desplace */
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.p9_Diseño div p:nth-child(1) {
+  transition-delay: 0s; /* Primer párrafo aparece inmediatamente */
+}
+.p9_Diseño div:hover {
+  height: 200px; /* Aumenta la altura cuando el ratón está encima */
+
+}
+
+.p9_Diseño div:hover p {
+  opacity: 1; /* El texto se hace visible cuando el ratón está encima */
+}

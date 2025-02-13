@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablón de Anuncios</title>
+    <link rel="stylesheet" href="central.css">
+</head>
+<body>
+    <header>
+        <nav class="p4_contenedor">
+          <div class="p4_izquierda">
+            <img src="img/logo1.png" alt="Logo del Juego">
+            <div class="p4_texto"><a href="P1_PaginaPrincipal.html">Inicio</a></div>
+            <div class="p4_texto"><a href="P9_PreguntasFrecuentes.html">Preguntas Frequentes</a></div>
+          </div>
+          <img src="img/logoempresa.png" alt="Logo de la Empresa" width="200px">   
+      </nav>
+    </header>
+    <main>
+        <section>
+            <div class="P3_board-container">
+                <h1>Próximas Actualizaciones</h1>
+                <div class="P3_board">
+                    <div class="P3_post">
+                        <h2>Actualización 1.1</h2>
+                        <p>Fecha de lanzamiento: 01/12/2023</p>
+                        <p>Descripción: Nuevas características y mejoras en el rendimiento.</p>
+                    </div>
+                    <div class="P3_post">
+                        <h2>Actualización 1.2</h2>
+                        <p>Fecha de lanzamiento: 15/01/2024</p>
+                        <p>Descripción: Nuevos niveles y corrección de errores.</p>
+                    </div>
+                </div>
+                <form id="P3_form">
+                    <h2>Publicar Nueva Actualización</h2>
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <label for="fecha">Fecha de lanzamiento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                    <button type="submit">Publicar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="P1_footer">
+        <span>© Equipo 84 - Soporte técnico 24/7</span>
+    </footer>
+    <script src="J3_TablonDeAnuncios.js"></script>
+</body>
+</html>
